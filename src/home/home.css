@@ -1,0 +1,23 @@
+
+.details{
+    background: #e6d8d8;
+    opacity: 0.9;
+    padding: 60px 20px;
+    flex-grow : 1;
+}
+
+.details-name{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.details-shortdes{
+    font-size: 20px
+}
+
+.details-holder{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    background: url('../../public/bg.jpg')
+}

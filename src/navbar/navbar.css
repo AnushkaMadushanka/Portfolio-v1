@@ -1,0 +1,48 @@
+.navbar {
+    background: #181818;
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+}
+
+.avatar {
+    width: 65px;
+}
+
+.icon {
+    color: #4d4d4e;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.icon:hover {
+    color: #08fdd8
+}
+
+.active-icon .icon {
+    color: #08fdd8
+}
+
+.icon-set a {
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .icon-set a {
+        display: inline;
+        text-align: left;
+    }
+}
