@@ -7,15 +7,6 @@
     background: #252627
 }
 
-.details-name{
-    font-size: 65px;
-    font-weight: bold;
-}
-
-.details-shortdes{
-    font-size: 20px
-}
-
 .details-holder{
     display: flex;
     align-items: center;
@@ -30,6 +21,20 @@
     height: 100vh;
 }
 
+.input-section{
+    margin-top: 15px;
+}
+.input-label{
+
+}
+.input{
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 7px;
+    width: 97%
+}
+
 @media only screen and (max-width: 600px) {
     .details-holder{
         display: flex;
@@ -37,6 +42,9 @@
         height: 90vh;
         background: url('../assets/bg.jpg');
         background-size: cover;
+    }
+    .details{
+        background: #252627
     }
     .background-section{
         background: none;

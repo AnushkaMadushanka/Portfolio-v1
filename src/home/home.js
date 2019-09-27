@@ -9,12 +9,13 @@ export default class Home extends Component {
                     <div className="details-name">
                         Hi, <br />
                         I'm Anushka
-                </div>
+                    </div>
                     <div className="details-shortdes">
                         Desktop/Web/Game Developer
-                </div>
+                    </div>
                 </section>
-            </div>
+                <section className="background-section" />
+            </div> 
         )
     }
 }
