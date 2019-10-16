@@ -4,7 +4,7 @@ import './contacts.css'
 export default class Contacts extends Component {
     render() {
         return (
-            <div className="details-holder">
+            <div className="details-holder-contact">
                 <section className="details">
                     <div className="details-name">
                         Contact me

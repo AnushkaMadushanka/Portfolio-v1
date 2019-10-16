@@ -4,7 +4,7 @@ import { faHome, faTasks, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { NavLink, Link } from 'react-router-dom'
 import './navbar.css'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import avatar from '../assets/img_avatar.png'
+import avatar from '../assets/logo.svg'
 
 export default function Navbar() {
     return (
@@ -22,7 +22,7 @@ export default function Navbar() {
                 </NavLink>
             </div>
             <div className="icon-set">
-                <Link exact to="/projects">
+                <Link exact to="https://github.com/AnushkaMadushanka">
                     <FontAwesomeIcon className="icon" icon={faGithub} />
                 </Link>
             </div>

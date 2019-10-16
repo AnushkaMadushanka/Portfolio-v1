@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import AnimationCanvas from '../custom-components/animation-canvas/animation-canvas';
+import P5Wrapper from 'react-p5-wrapper';
 import "./app.css"
 
 import Navbar from "../navbar/navbar"
@@ -15,9 +17,14 @@ function App() {
                     <Navbar />
                 </div>
                 <div className="main">
-                    <Route path="/" exact component={Home} />
-                    <Route path="/projects" exact component={Projects} />
-                    <Route path="/contacts" exact component={Contacts} />
+                    <div className="details-holder">
+                        <P5Wrapper sketch={AnimationCanvas} />
+                    </div>
+                    <div>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/projects" exact component={Projects} />
+                        <Route path="/contacts" exact component={Contacts} />
+                    </div>
                 </div>
             </Router>
         </div>

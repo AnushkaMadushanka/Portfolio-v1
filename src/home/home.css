@@ -4,43 +4,44 @@
     padding: 60px 20px;
     flex: 1;
     color: white;
-    background: #252627
+    position: relative !important;
+}
+
+.details-background{
+    background: #252627;
+    display: flex;
+    justify-content: space-between;
 }
 
 .details-name{
     font-size: 65px;
     font-weight: bold;
+    position: relative !important;
 }
 
 .details-shortdes{
-    font-size: 20px
+    font-size: 20px;
+    position: relative !important;
 }
 
-.details-holder{
+.details-holder-home{
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100vh;
-    background: #252627
 }
-.background-section{
-    background: url('../assets/bg.jpg');
-    background-size: cover;
-    flex: 1;
-    height: 100vh;
+
+.details-tech-stack{
+    display: block
 }
 
 @media only screen and (max-width: 600px) {
-    .details-holder{
-        display: flex;
-        align-items: center;
-        height: 90vh;
-        background: url('../assets/bg.jpg');
-        background-size: cover;
+    .details-holder-home{
+        height: calc(100vh - 65px);
     }
-    .background-section{
-        background: none;
-        flex: none;
-        height: 0px;
+    .details-background{
+        background: #252627;
+        display: block;
+        justify-content: space-between;
+        margin-top: 65px;
     }
 }

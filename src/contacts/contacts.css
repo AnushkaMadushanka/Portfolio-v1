@@ -4,21 +4,26 @@
     padding: 60px 20px;
     flex: 1;
     color: white;
-    background: #252627
+    background: #252627;
+    position: relative !important;
 }
 
-.details-holder{
+.details-name{
+    font-size: 65px;
+    font-weight: bold;
+    position: relative !important;
+}
+
+.details-shortdes{
+    font-size: 20px;
+    position: relative !important;
+}
+
+.details-holder-contact{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
-    background: #252627
-}
-.background-section{
-    background: url('../assets/bg.jpg');
-    background-size: cover;
-    flex: 1;
-    height: 100vh;
 }
 
 .input-section{
@@ -32,23 +37,15 @@
     font-size: 15px;
     padding: 5px;
     margin-top: 7px;
-    width: 97%
+    width: 45%
 }
 
 @media only screen and (max-width: 600px) {
-    .details-holder{
-        display: flex;
-        align-items: center;
-        height: 90vh;
-        background: url('../assets/bg.jpg');
-        background-size: cover;
+    .details-holder-contact{
+        height: calc(100vh - 65px);
     }
-    .details{
-        background: #252627
+    .input{
+        width: 97%
     }
-    .background-section{
-        background: none;
-        flex: none;
-        height: 0px;
-    }
+    
 }

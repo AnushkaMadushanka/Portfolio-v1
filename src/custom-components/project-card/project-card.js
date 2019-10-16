@@ -9,7 +9,7 @@ export default class ProjectCard extends Component {
     render() {
         return (
             <div className="card">
-                <img src="./img_avatar.png" alt="Avatar" style={{ width: '100%' }} />
+                <img src="https://i2.wp.com/www.softwaretestingmaterial.com/wp-content/uploads/2019/06/Web-Application-Testing-Tutorial.png?fit=1280%2C720&ssl=1" alt="Avatar" style={{ width: '100%' }} />
                 <div className="container">
                     <h4><b>John Doe</b></h4>
                     <p>

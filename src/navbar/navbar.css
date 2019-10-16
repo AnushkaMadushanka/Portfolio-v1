@@ -7,6 +7,7 @@
     align-items: center;
     flex-direction: column;
     position: fixed;
+    z-index: 1;
 }
 
 .avatar {
@@ -15,7 +16,7 @@
 
 .icon {
     color: #4d4d4e;
-    padding: 15px;
+    padding: 20px;
     font-size: 20px;
 }
 
@@ -40,6 +41,7 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
+        z-index: 1;
     }
     .icon-set a {
         display: inline;

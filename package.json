@@ -52,6 +52,7 @@
     "react-dev-utils": "^9.0.3",
     "react-dom": "^16.9.0",
     "react-p5": "^1.0.5",
+    "react-p5-wrapper": "^2.0.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "resolve": "1.12.0",
