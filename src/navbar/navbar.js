@@ -22,9 +22,9 @@ export default function Navbar() {
                 </NavLink>
             </div>
             <div className="icon-set">
-                <Link exact to="https://github.com/AnushkaMadushanka">
+                <a href="https://github.com/AnushkaMadushanka" target="_blank">
                     <FontAwesomeIcon className="icon" icon={faGithub} />
-                </Link>
+                </a>
             </div>
         </header>
     )
