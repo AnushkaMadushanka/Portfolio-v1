@@ -12,6 +12,7 @@
     font-size: 65px;
     font-weight: bold;
     position: relative !important;
+    color: #08fdd8;
 }
 
 .details-shortdes{
@@ -35,7 +36,7 @@
 .input{
     display: block;
     font-size: 15px;
-    padding: 5px;
+    padding: 17px;
     margin-top: 7px;
     width: 45%
 }
