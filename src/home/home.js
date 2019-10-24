@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './home.css'
-import angular from '../assets/icons/angular.png'
-import react from '../assets/icons/react.png'
-import csharp from '../assets/icons/c#.png'
-import js from '../assets/icons/js.png'
-import node from '../assets/icons/node.png'
-import unity from '../assets/icons/unity.png'
-import sqlserver from '../assets/icons/sqlserver.jpg'
+import angular from '../assets/icons/angular.jpg'
+import react from '../assets/icons/react.jpg'
+import csharp from '../assets/icons/csharp.jpg'
+import js from '../assets/icons/js.jpg'
+import node from '../assets/icons/node.jpg'
+import unity from '../assets/icons/unity.jpg'
+import sqlserver from '../assets/icons/sql.jpg'
 
 
 export default class Home extends Component {
