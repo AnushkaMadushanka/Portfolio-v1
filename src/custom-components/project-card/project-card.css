@@ -8,6 +8,9 @@
     transition: 0.3s;
     background: #222222;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -26,6 +29,8 @@
     font-size: 16px;
     cursor: pointer;
     width: 49.5%;
+    text-align: center;
+    text-decoration: none
 }
 
 .btn:hover {

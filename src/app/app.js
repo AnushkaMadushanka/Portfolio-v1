@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import AnimationCanvas from '../custom-components/animation-canvas/animation-canvas';
 import P5Wrapper from 'react-p5-wrapper';
 import "./app.css"
