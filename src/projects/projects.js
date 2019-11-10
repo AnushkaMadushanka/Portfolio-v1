@@ -22,16 +22,29 @@ export default class Projects extends Component {
                 languages: ["React", "javascript"]
             },
             {
-                title: "Audio Visualization Project",
-                description: "",
+                title: "Audio Visualization Project #1",
+                description: "Testing the broads of audio visualization in unity 3d",
                 githubLink: "",
-                releaseLink: ""
+                staticImageUrl: "https://i.ytimg.com/vi/NCvmuG4uP6A/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDJSSHGVk9pimq1GAMT8RkbCn_ZNg",
+                gifUrl: "https://media.giphy.com/media/LS8t57onY5rKf2K9mf/giphy.gif",
+                releaseLink: "https://www.youtube.com/watch?v=NCvmuG4uP6A",
+                languages: ["Unity", "C#"]
+            },
+            {
+                title: "Audio Visualization Project #2",
+                description: "Testing the broads of audio visualization in unity 3d",
+                staticImageUrl: "https://i.ytimg.com/vi/ll_8dB-HIwE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAcpXmH6M7rbgv2Hwura7T0xdknqg",
+                gifUrl: "https://media.giphy.com/media/lQVI37MjhY4yqaMDW0/giphy.gif",
+                githubLink: "",
+                releaseLink: "https://www.youtube.com/watch?v=ll_8dB-HIwE",
+                languages: ["Unity", "C#"]
             },
             {
                 title: "Operation Alone",
-                description: "",
+                description: "A top-down shooter game about finding your way out through tunnels filled with zombies",
                 githubLink: "",
-                releaseLink: "https://anushka-madushanka.itch.io/operation-alone"
+                releaseLink: "https://anushka-madushanka.itch.io/operation-alone",
+                languages: ["Unity", "C#"]
             }
         ]
     }

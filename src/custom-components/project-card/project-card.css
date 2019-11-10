@@ -1,6 +1,14 @@
 .container {
     padding: 2px 16px;
-    bottom: 0px
+    bottom: 0px;
+    height: 100%;
+}
+
+.imgContainer{
+    width: 100%; 
+}
+.imgContainer img{
+    width: 100%;
 }
 
 .card {
