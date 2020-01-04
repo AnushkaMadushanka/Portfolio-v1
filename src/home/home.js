@@ -13,7 +13,7 @@ export default class Home extends Component {
     render() {
         return (
             <div className="details-holder-home">
-                <div>
+                <div style={{width: '100%'}}>
                     <section className="details-background">
                         <section className="details">
                             <div className="details-name">

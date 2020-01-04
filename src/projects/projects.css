@@ -1,7 +1,7 @@
 .project-card-holder{
-    padding: 10px;
+    padding: 0.5em;
     display: grid;
     position: relative;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    gap: 10px
+    gap: 0.5em
 }

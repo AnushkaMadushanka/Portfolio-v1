@@ -11,14 +11,14 @@
 }
 
 .avatar {
-    width: 55px;
-    padding: 5px;
+    width: 3.5em;
+    padding: 0.3em;
 }
 
 .icon {
     color: #4d4d4e;
-    padding: 20px;
-    font-size: 20px;
+    padding: 1em;
+    font-size: 1.2em;
 }
 
 .icon:hover {
