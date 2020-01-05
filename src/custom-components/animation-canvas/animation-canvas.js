@@ -2,10 +2,12 @@ export default function AnimationCanvas(p) {
 
     let system;
 
+    let particleCount = isMobileDevice() ? 150 : 400
+
     p.setup = function () {
         p.createCanvas(p.windowWidth, p.windowHeight);
         system = new ParticleSystem(p.createVector(p.width / 2, 50));
-        for (let index = 0; index < 500; index++) {
+        for (let index = 0; index < particleCount; index++) {
             system.addParticle();
         }
     }
@@ -21,7 +23,7 @@ export default function AnimationCanvas(p) {
             this.console.log({ windowWidth: p.windowWidth, windowHeight: p.windowHeight })
             p.resizeCanvas(p.windowWidth, p.windowHeight)
             system = new ParticleSystem(p.createVector(p.width / 2, 50));
-            for (let index = 0; index < 500; index++) {
+            for (let index = 0; index < particleCount; index++) {
                 system.addParticle();
             }
         }, 250);
@@ -74,5 +76,9 @@ export default function AnimationCanvas(p) {
                 p.run()
             }
         }
+    };
+
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
     };
 };

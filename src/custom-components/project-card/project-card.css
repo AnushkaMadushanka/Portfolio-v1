@@ -31,12 +31,12 @@
 
 .btn {
     background: #181818;
-    border: none;
+    border: 1px solid black;
     color: #4d4d4e;
     padding: 0.72em 0.96em;
     font-size: 0.96em;
     cursor: pointer;
-    width: 49.5%;
+    width: 100%;
     text-align: center;
     text-decoration: none
 }

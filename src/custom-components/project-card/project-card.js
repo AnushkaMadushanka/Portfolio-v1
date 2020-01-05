@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import './project-card.css'
-import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+import { faFolderOpen, faCogs } from '@fortawesome/free-solid-svg-icons';
 
 export default class ProjectCard extends Component {
 
@@ -26,6 +26,11 @@ export default class ProjectCard extends Component {
                 <div className="container">
                     <h4><b>{project.title}</b></h4>
                     <p>{project.description}</p>
+                </div>
+                <div className="btn-holder">
+                    <button className="btn" onClick={()=>{this.props.openModal(project.youtubeEmbedSource)}}>
+                        <FontAwesomeIcon icon={faCogs} /> | How it works
+                    </button>
                 </div>
                 <div className="btn-holder">
                     <a className="btn" href={project.githubLink} target="_blank">

@@ -36,13 +36,18 @@
 
 @media only screen and (max-width: 600px) {
     .navbar {
-        height: auto;
+        height: 4.1em;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
         z-index: 1;
+    }
+    .icon-set{
+        display: flex;
+        align-items: center;
+        height: 100%;
     }
     .icon-set a {
         display: inline;
