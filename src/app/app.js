@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, useLocation } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import AnimationCanvas from '../custom-components/animation-canvas/animation-canvas';
 import P5Wrapper from 'react-p5-wrapper';
 import "./app.css"
@@ -20,14 +21,31 @@ function App() {
                     <div className="details-holder">
                         <P5Wrapper sketch={AnimationCanvas} />
                     </div>
-                    <div>
-                        <Route path="/" exact component={Home} />
-                        <Route path="/projects" exact component={Projects} />
-                        <Route path="/contacts" exact component={Contacts} />
-                    </div>
+                    <AppRoutes />
                 </div>
             </Router>
         </div>
     );
+}
+
+function AppRoutes() {
+    let location = useLocation();
+    return (
+        <div>
+            <TransitionGroup>
+                <CSSTransition
+                    key={location.pathname}
+                    classNames="fade"
+                    timeout={300}
+                >
+                    <Switch location={location}>
+                        <Route path="/" exact component={Home} />
+                        <Route path="/projects" exact component={Projects} />
+                        <Route path="/contacts" exact component={Contacts} />
+                    </Switch>
+                </CSSTransition>
+            </TransitionGroup>
+        </div>
+    )
 }
 export default App;

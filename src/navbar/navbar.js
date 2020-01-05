@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faTasks, faEnvelope, faFilePdf, faTimes, faUser } from '@fortawesome/free-solid-svg-icons'
+import { CSSTransition } from 'react-transition-group'
 import { NavLink, Link } from 'react-router-dom'
 import './navbar.css'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -54,25 +55,32 @@ export default function Navbar() {
             </header>
 
             <Media query="(max-width: 600px)" render={() =>
-                (showLinks &&
-                    <header className="navbar">
-                        <div className="icon-set">
-                            <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank">
-                                <FontAwesomeIcon className="icon" icon={faFilePdf} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank">
-                                <FontAwesomeIcon className="icon" icon={faLinkedin} />
-                            </a>
-                            <a href="https://github.com/AnushkaMadushanka" target="_blank">
-                                <FontAwesomeIcon className="icon" icon={faGithub} />
-                            </a>
-                        </div>
-                        <div className="icon-set">
-                            <a onClick={() => { setShowLinks(false) }}>
-                                <FontAwesomeIcon className="icon" icon={faTimes} />
-                            </a>
-                        </div>
-                    </header>
+                (
+                    <CSSTransition
+                        in={showLinks}
+                        timeout={300}
+                        classNames="alert"
+                        unmountOnExit
+                    >
+                        <header className="navbar">
+                            <div className="icon-set">
+                                <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank">
+                                    <FontAwesomeIcon className="icon" icon={faFilePdf} />
+                                </a>
+                                <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank">
+                                    <FontAwesomeIcon className="icon" icon={faLinkedin} />
+                                </a>
+                                <a href="https://github.com/AnushkaMadushanka" target="_blank">
+                                    <FontAwesomeIcon className="icon" icon={faGithub} />
+                                </a>
+                            </div>
+                            <div className="icon-set">
+                                <a onClick={() => { setShowLinks(false) }}>
+                                    <FontAwesomeIcon className="icon" icon={faTimes} />
+                                </a>
+                            </div>
+                        </header>
+                    </CSSTransition>
                 )}
             />
 

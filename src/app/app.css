@@ -1,40 +1,63 @@
-.navbar-parent{
+.navbar-parent {
     grid-area: navbar
 }
-.main{
+
+.main {
     grid-area: main
 }
-.router{
+
+.router {
     display: grid;
     grid-template-columns: 4em auto;
     grid-template-rows: 100%;
     grid-template-areas: "navbar main"
 }
-.details-holder{
+
+.details-holder {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #252627
 }
 
-.details-holder div, .details-holder canvas{
+.details-holder div, .details-holder canvas {
     position: fixed;
 }
+
+.fade-enter {
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    transform: translateX(0);
+    transition: transform 300ms;
+}
+
+.fade-exit {
+    display:none;
+}
+
+.fade-exit.fade-exit-active {
+    display:none;
+}
+
 @media only screen and (max-width: 600px) {
-    .router{
+    .router {
         grid-template-rows: 4em auto;
         grid-template-columns: 100%;
-        grid-template-areas: "navbar"
-                            "main"
+        grid-template-areas: "navbar" "main"
     }
 }
+
 @media only screen and (min-width: 2000px) {
-    .router{
+    .router {
         font-size: 25px
     }
 }
+
 @media only screen and (min-width: 3000px) {
-    .router{
+    .router {
         font-size: 35px
     }
 }
