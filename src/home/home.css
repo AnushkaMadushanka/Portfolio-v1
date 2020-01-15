@@ -38,9 +38,14 @@
 .ts-icon{
     display: inline;
     height: 6.25em;
-    border: 0.4em solid #08fdd8;
+    border: 0.3em solid #08fdd8;
     border-radius: 4em;
     margin: 0.6em;
+    transition: transform 0.5s
+}
+
+.ts-icon:hover{
+    transform: scale(1.2)
 }
 
 @media only screen and (max-width: 600px) {

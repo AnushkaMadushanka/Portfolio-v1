@@ -62,6 +62,7 @@ export default class Contacts extends Component {
     render() {
         return (
             <div className="details-holder-contact">
+                <div className="details-background">
                 <section className="details">
                     <div className="details-name">
                         Contact me
@@ -107,7 +108,10 @@ export default class Contacts extends Component {
                         <button className="submit" onClick={this.sendEmail}>Submit</button>
                     </div>
                 </section>
-                <section className="background-section" />
+                <section className="details">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d1980.7907686464778!2d79.9396452878108!3d6.820640263620854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e0!4m0!4m4!2s6.820632318530686%2C%2079.93930661200797!3m2!1d6.8206323!2d79.9393066!5e0!3m2!1sen!2slk!4v1579073669899!5m2!1sen!2slk" width="600" height="450" frameborder="0" className="map" allowfullscreen=""></iframe>
+                </section>
+                </div>
             </div>
         )
     }
