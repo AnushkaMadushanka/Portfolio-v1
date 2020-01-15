@@ -42,6 +42,24 @@
     display:none;
 }
 
+
+.fade-animation-enter {
+    opacity: 0;
+}
+
+.fade-animation-enter.fade-animation-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.fade-animation-exit {
+    display:none;
+}
+
+.fade-animation-exit.fade-animation-exit-active {
+    display:none;
+}
+
 @media only screen and (max-width: 600px) {
     .router {
         grid-template-rows: 4em auto;

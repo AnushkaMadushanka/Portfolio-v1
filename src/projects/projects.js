@@ -78,12 +78,12 @@ export default class Projects extends Component {
                 </div>
                 {this.state.showModal && 
                 <div ref={this.modal} className="modal" onClick={(event)=>{
-                    if (event.target == this.modal.current) {
+                    if (event.target === this.modal.current) {
                         this.setState({showModal: false})
                     }
                 }}>
                     <div className="modal-content">
-                        <iframe width="100%" height="100%" src={this.state.youtubeEmbedSource} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width="100%" height="100%" title="How it Works" src={this.state.youtubeEmbedSource} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>}
             </div>

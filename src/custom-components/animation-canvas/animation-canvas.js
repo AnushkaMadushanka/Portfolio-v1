@@ -13,7 +13,7 @@ export default function AnimationCanvas(p) {
     }
 
     p.draw = function () {
-        p.background('#000');
+        p.background('#141414');
         system.run();
     }
 

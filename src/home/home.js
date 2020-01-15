@@ -29,7 +29,7 @@ export default class Home extends Component {
                         <Typist.Delay ms={500} />
                         <section className="details">
                             <div className="details-name">
-                                About Me
+                                My Story
                                 </div>
                             <div className="details-shortdes">
                                 <p>
@@ -43,21 +43,13 @@ export default class Home extends Component {
                     </Typist>
                     <section className="details-background" style={{ textAlign: "center" }}>
                         <section className="details icon-holder">
-                            <img src={angular} className="ts-icon" />
-                            <img src={react} className="ts-icon" />
-                            <img src={js} className="ts-icon" />
-                            <img src={node} className="ts-icon" />
-                            <img src={csharp} className="ts-icon" />
-                            <img src={sqlserver} className="ts-icon" />
-                            <img src={unity} className="ts-icon" />
-
-                            {/* <LanguageIcon src={angular} text="Angular" />
-                            <LanguageIcon src={react} text="React" />
-                            <LanguageIcon src={js} text="JavaScript" />
-                            <LanguageIcon src={node} text="NodeJs" />
-                            <LanguageIcon src={csharp} text="C#" />
-                            <LanguageIcon src={sqlserver} text="SQL Server" />
-                            <LanguageIcon src={unity} text="Unity" /> */}
+                            <img src={angular} className="ts-icon" alt="Angular"/>
+                            <img src={react} className="ts-icon" alt="ReactJs"/>
+                            <img src={js} className="ts-icon" alt="Javascript"/>
+                            <img src={node} className="ts-icon" alt="NodeJs"/>
+                            <img src={csharp} className="ts-icon" alt="C#"/>
+                            <img src={sqlserver} className="ts-icon" alt="SQL Server"/>
+                            <img src={unity} className="ts-icon" alt="Unity"/>
                         </section>
                     </section>
                 </div>

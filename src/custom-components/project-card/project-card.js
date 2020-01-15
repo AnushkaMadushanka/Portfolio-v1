@@ -33,10 +33,10 @@ export default class ProjectCard extends Component {
                     </button>
                 </div>
                 <div className="btn-holder">
-                    <a className="btn" href={project.githubLink} target="_blank">
+                    <a className="btn" href={project.githubLink} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} /> | Github
                     </a>
-                    <a className="btn" href={project.releaseLink} target="_blank">
+                    <a className="btn" href={project.releaseLink} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFolderOpen} /> | Open Demo
                     </a>
                 </div>
