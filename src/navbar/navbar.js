@@ -29,7 +29,7 @@ export default function Navbar() {
                 <Media query="(min-width: 600px)" render={() =>
                     (
                         <div className="icon-set">
-                            <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank" rel="noopener noreferrer">
+                            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icon" icon={faFilePdf} />
                             </a>
                             <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank" rel="noopener noreferrer">
@@ -64,7 +64,7 @@ export default function Navbar() {
                     >
                         <header className="navbar">
                             <div className="icon-set">
-                                <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank" rel="noopener noreferrer">
+                                <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon className="icon" icon={faFilePdf} />
                                 </a>
                                 <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank" rel="noopener noreferrer">

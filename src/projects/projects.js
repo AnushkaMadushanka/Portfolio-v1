@@ -19,15 +19,18 @@ export default class Projects extends Component {
             },
             {
                 title: "Auto Extension Reloader",
-                description: "this plugin allows developers to see the current status of the building process of their specific extension. get notification when the status change and it will reload the extension after a build",
+                description: "This plugin allows developers to see the current status of the building process of their specific extension. get notification when the status change and it will reload the extension after a build",
                 githubLink: "https://github.com/AnushkaMadushanka/auto-extension-reloader",
                 releaseLink: "https://www.npmjs.com/package/auto-extension-reloader",
+                staticImageUrl: "http://i3.ytimg.com/vi/gczjrjCIrVU/maxresdefault.jpg",
+                gifUrl: "https://media.giphy.com/media/VgC7Mk7vqUIUl63tOP/giphy.gif",
+                youtubeEmbedSource: "https://www.youtube.com/embed/gczjrjCIrVU",
                 languages: ["React", "javascript"]
             },
             {
                 title: "Audio Visualization Project #1",
                 description: "Testing the broads of audio visualization in unity 3d",
-                githubLink: "",
+                githubLink: "https://github.com/AnushkaMadushanka/Audio-Visualization",
                 staticImageUrl: "https://i.ytimg.com/vi/NCvmuG4uP6A/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDJSSHGVk9pimq1GAMT8RkbCn_ZNg",
                 gifUrl: "https://media.giphy.com/media/LS8t57onY5rKf2K9mf/giphy.gif",
                 releaseLink: "https://www.youtube.com/watch?v=NCvmuG4uP6A",
@@ -39,7 +42,7 @@ export default class Projects extends Component {
                 description: "Testing the broads of audio visualization in unity 3d",
                 staticImageUrl: "https://i.ytimg.com/vi/ll_8dB-HIwE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAcpXmH6M7rbgv2Hwura7T0xdknqg",
                 gifUrl: "https://media.giphy.com/media/lQVI37MjhY4yqaMDW0/giphy.gif",
-                githubLink: "",
+                githubLink: "https://github.com/AnushkaMadushanka/Audio-Visualization",
                 releaseLink: "https://www.youtube.com/watch?v=ll_8dB-HIwE",
                 youtubeEmbedSource: "https://www.youtube.com/embed/ll_8dB-HIwE",
                 languages: ["Unity", "C#"]
@@ -47,7 +50,7 @@ export default class Projects extends Component {
             {
                 title: "Operation Alone",
                 description: "A top-down shooter game about finding your way out through tunnels filled with zombies",
-                githubLink: "",
+                githubLink: "https://github.com/AnushkaMadushanka/Operation-Alone",
                 staticImageUrl: "http://i3.ytimg.com/vi/b6FQ_OjQ8X0/maxresdefault.jpg",
                 releaseLink: "https://anushka-madushanka.itch.io/operation-alone",
                 gifUrl: "https://j.gifs.com/zvAGOr.gif",
@@ -57,13 +60,13 @@ export default class Projects extends Component {
         ]
         this.modal = React.createRef();
         this.openModal = this.openModal.bind(this)
-        this.state={
+        this.state = {
             showModal: false,
             youtubeEmbedSource: ""
         }
     }
 
-    openModal(youtubeEmbedSource){
+    openModal(youtubeEmbedSource) {
         this.setState({
             showModal: true,
             youtubeEmbedSource
@@ -76,16 +79,16 @@ export default class Projects extends Component {
                 <div className="project-card-holder">
                     {this.projects.map((i) => <ProjectCard project={i} openModal={this.openModal} />)}
                 </div>
-                {this.state.showModal && 
-                <div ref={this.modal} className="modal" onClick={(event)=>{
-                    if (event.target === this.modal.current) {
-                        this.setState({showModal: false})
-                    }
-                }}>
-                    <div className="modal-content">
-                        <iframe width="100%" height="100%" title="How it Works" src={this.state.youtubeEmbedSource} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
-                </div>}
+                {this.state.showModal &&
+                    <div ref={this.modal} className="modal" onClick={(event) => {
+                        if (event.target === this.modal.current) {
+                            this.setState({ showModal: false })
+                        }
+                    }}>
+                        <div className="modal-content">
+                            <iframe width="100%" height="100%" title="How it Works" src={this.state.youtubeEmbedSource} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        </div>
+                    </div>}
             </div>
         )
     }
