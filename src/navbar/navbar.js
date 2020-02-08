@@ -14,7 +14,9 @@ export default function Navbar() {
     return (
         <div>
             <header className="navbar">
-                <img className="avatar" src={avatar} alt="Avatar" />
+                <NavLink exact to="/">
+                    <img className="avatar" src={avatar} alt="Avatar" />
+                </NavLink>
                 <div className="icon-set">
                     <NavLink exact to="/" activeClassName="active-icon">
                         <FontAwesomeIcon className="icon" icon={faHome} />
@@ -29,7 +31,7 @@ export default function Navbar() {
                 <Media query="(min-width: 600px)" render={() =>
                     (
                         <div className="icon-set">
-                            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                            <a href="https://drive.google.com/file/d/15XpvuUJ8bnvbtTev7zGr1CHa7jG9aMTp/view" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon className="icon" icon={faFilePdf} />
                             </a>
                             <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank" rel="noopener noreferrer">
@@ -64,7 +66,7 @@ export default function Navbar() {
                     >
                         <header className="navbar">
                             <div className="icon-set">
-                                <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                                <a href="https://drive.google.com/file/d/15XpvuUJ8bnvbtTev7zGr1CHa7jG9aMTp/view" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon className="icon" icon={faFilePdf} />
                                 </a>
                                 <a href="https://www.linkedin.com/in/anushka-madushanka-6b215515a/" target="_blank" rel="noopener noreferrer">
@@ -75,7 +77,7 @@ export default function Navbar() {
                                 </a>
                             </div>
                             <div className="icon-set">
-                                <a href="/#" onClick={(e) => {  e.preventDefault(); setShowLinks(false) }}>
+                                <a href="/#" onClick={(e) => { e.preventDefault(); setShowLinks(false) }}>
                                     <FontAwesomeIcon className="icon" icon={faTimes} />
                                 </a>
                             </div>

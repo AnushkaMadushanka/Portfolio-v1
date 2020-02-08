@@ -77,7 +77,7 @@ export default class Projects extends Component {
         return (
             <div>
                 <div className="project-card-holder">
-                    {this.projects.map((i) => <ProjectCard project={i} openModal={this.openModal} />)}
+                    {this.projects.map((i) => <ProjectCard project={i} openModal={this.openModal} key={i.gifUrl}/>)}
                 </div>
                 {this.state.showModal &&
                     <div ref={this.modal} className="modal" onClick={(event) => {
